@@ -1,7 +1,7 @@
-import Card from "../../components/Card";
-import data from "../../assets/data.json";
-import withLayout from "../../components/Layout";
-import { Appointment } from "../../providers/AppointmentProvider";
+import Card from "src/components/Card";
+import data from "src/assets/data.json";
+import withLayout from "src/components/Layout";
+import { Appointment } from "src/providers/AppointmentProvider";
 import { useState } from "react";
 import DoctorDetailsModal from "./components/DoctorDetailsModal";
 

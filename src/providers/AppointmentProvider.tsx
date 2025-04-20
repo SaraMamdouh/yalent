@@ -1,5 +1,5 @@
 import React, { createContext, useState, ReactNode, useContext } from "react";
-import AppointmentsModal from "../features/Home/components/AppointmentsModal";
+import AppointmentsModal from "src/features/Home/components/AppointmentsModal";
 
 export interface Appointment {
   id: number;

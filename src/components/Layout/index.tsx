@@ -1,6 +1,6 @@
 import React from "react";
 import Navbar from "../Navbar";
-import AppointmentProvider from "../../providers/AppointmentProvider";
+import AppointmentProvider from "src/providers/AppointmentProvider";
 
 interface LayoutProps {
   children: React.ReactNode;

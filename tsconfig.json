@@ -1,7 +1,20 @@
 {
-  "files": [],
-  "references": [
-    { "path": "./tsconfig.app.json" },
-    { "path": "./tsconfig.node.json" }
-  ]
+  "compilerOptions": {
+    "baseUrl": ".", // Base directory to resolve non-relative module names
+    "lib": ["ES6", "DOM"], // Specify library files to be included in the compilation
+    "allowJs": true, // Allow JavaScript files to be compiled
+    "paths": {
+      "src/*": ["src/*"]
+    },
+    "jsx": "react-jsx", // Specify JSX code generation for React 17+
+    "target": "ES6", // Specify ECMAScript target version
+    "resolveJsonModule": true, // Allow importing .json files as modules
+    "module": "CommonJS", // Specify module code generation
+    "strict": true, // Enable all strict type-checking options
+    "esModuleInterop": true, // Enable compatibility with CommonJS and ES Modules
+    "skipLibCheck": true, // Skip type checking of declaration files
+    "forceConsistentCasingInFileNames": true // Ensure consistent casing in file names
+  },
+  "include": ["src"], // Specify the files or directories to include
+  "exclude": ["node_modules", "vitest.config.ts"] // Specify the files or directories to exclude
 }

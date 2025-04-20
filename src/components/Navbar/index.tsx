@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./index.module.css";
-import { useAppointmentContext } from "../../providers/AppointmentProvider";
+import { useAppointmentContext } from "src/providers/AppointmentProvider";
 
 const Navbar: React.FC = () => {
   const { appointments,handleShowAppointments } = useAppointmentContext();

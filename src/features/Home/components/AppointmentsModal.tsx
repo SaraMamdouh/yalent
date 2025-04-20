@@ -1,7 +1,7 @@
-import Modal from "../../../components/Modal";
+import Modal from "src/components/Modal";
 import {
     useAppointmentContext,
-} from "../../../providers/AppointmentProvider";
+} from "src/providers/AppointmentProvider";
 
 type AppointmentsModalProps = {
     isOpen: boolean;

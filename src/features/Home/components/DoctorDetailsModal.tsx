@@ -1,9 +1,9 @@
 import { useState } from "react";
-import Modal from "../../../components/Modal";
+import Modal from "src/components/Modal";
 import {
   Appointment,
   useAppointmentContext,
-} from "../../../providers/AppointmentProvider";
+} from "src/providers/AppointmentProvider";
 import styles from "./DoctorDetailsModal.module.css";
 
 type DoctorDetailsModalProps = {
