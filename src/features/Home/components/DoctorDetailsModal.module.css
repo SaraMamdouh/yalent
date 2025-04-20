@@ -1,0 +1,8 @@
+.tags {
+  font-size: 0.85rem;
+  background-color: #f5f5f5f5;
+  font-weight: bold;
+  padding: 12px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+}

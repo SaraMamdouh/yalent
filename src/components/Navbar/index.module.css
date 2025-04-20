@@ -1,0 +1,40 @@
+/* index.module.css */
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+  background-color: #333;
+  padding: 1rem 2rem;
+  color: white;
+}
+
+.navbarLogo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.navbarLinks {
+  display: flex;
+  list-style: none;
+  position: relative;
+  li {
+    margin: 0 0.5rem;
+  }
+}
+
+.badge {
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  line-height: 17px;
+  background-color: red;
+  color: white;
+  border-radius: 50%;
+  text-align: center;
+  font-size: 12px;
+  top: -8px;
+  right: -8px;
+  font-weight: bold;
+}

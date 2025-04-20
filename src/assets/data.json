@@ -1,0 +1,81 @@
+[
+  {
+    "id": 1,
+    "name": "Dr. Alice Johnson",
+    "photo": "https://via.placeholder.com/150",
+    "specialty": "Cardiologist",
+    "availability": [
+      "Mon: 9 AM - 5 PM",
+      "Tue: 9 AM - 5 PM",
+      "Wed: 9 AM - 5 PM",
+      "Thu: 9 AM - 5 PM",
+      "Fri: 9 AM - 5 PM"
+    ],
+    "location": "New York, NY"
+  },
+  {
+    "id": 2,
+    "name": "Dr. Bob Smith",
+    "photo": "https://via.placeholder.com/150",
+    "specialty": "Dermatologist",
+    "availability": [
+      "Tue: 10 AM - 4 PM",
+      "Wed: 10 AM - 4 PM",
+      "Thu: 10 AM - 4 PM"
+    ],
+    "location": "Los Angeles, CA"
+  },
+  {
+    "id": 3,
+    "name": "Dr. Clara Lee",
+    "photo": "https://via.placeholder.com/150",
+    "specialty": "Pediatrician",
+    "availability": [
+      "Mon: 8 AM - 3 PM",
+      "Tue: 8 AM - 3 PM",
+      "Wed: 8 AM - 3 PM",
+      "Thu: 8 AM - 3 PM",
+      "Fri: 8 AM - 3 PM",
+      "Satur: 8 AM - 3 PM"
+    ],
+    "location": "Chicago, IL"
+  },
+  {
+    "id": 4,
+    "name": "Dr. David Brown",
+    "photo": "https://via.placeholder.com/150",
+    "specialty": "Orthopedic Surgeon",
+    "availability": [
+      "Wed: 11 AM - 6 PM",
+      "Thu: 11 AM - 6 PM",
+      "Fri: 11 AM - 6 PM"
+    ],
+    "location": "Houston, TX"
+  },
+  {
+    "id": 5,
+    "name": "Dr. Emily Davis",
+    "photo": "https://via.placeholder.com/150",
+    "specialty": "Neurologist",
+    "availability": [
+      "Mon: 9 AM - 5 PM",
+      "Tue: 9 AM - 5 PM",
+      "Wed: 9 AM - 5 PM",
+      "Thu: 9 AM - 5 PM",
+      "Fri: 9 AM - 5 PM"
+    ],
+    "location": "San Francisco, CA"
+  },
+  {
+    "id": 6,
+    "name": "Dr. Frank Wilson",
+    "photo": "https://via.placeholder.com/150",
+    "specialty": "Endocrinologist",
+    "availability": [
+      "Mon: 10 AM - 4 PM",
+      "Tue: 10 AM - 4 PM",
+      "Wed: 10 AM - 4 PM"
+    ],
+    "location": "Seattle, WA"
+  }
+]
