@@ -2,7 +2,7 @@
   {
     "id": 1,
     "name": "Dr. Alice Johnson",
-    "photo": "https://via.placeholder.com/150",
+    "photo": "https://images.unsplash.com/photo-1607746882042-944635dfe10e",
     "specialty": "Cardiologist",
     "availability": [
       "Mon: 9 AM - 5 PM",
@@ -16,7 +16,7 @@
   {
     "id": 2,
     "name": "Dr. Bob Smith",
-    "photo": "https://via.placeholder.com/150",
+    "photo": "https://images.pexels.com/photos/2182970/pexels-photo-2182970.jpeg",
     "specialty": "Dermatologist",
     "availability": [
       "Tue: 10 AM - 4 PM",
@@ -28,7 +28,7 @@
   {
     "id": 3,
     "name": "Dr. Clara Lee",
-    "photo": "https://via.placeholder.com/150",
+    "photo": "https://images.pexels.com/photos/7904457/pexels-photo-7904457.jpeg",
     "specialty": "Pediatrician",
     "availability": [
       "Mon: 8 AM - 3 PM",
@@ -36,14 +36,14 @@
       "Wed: 8 AM - 3 PM",
       "Thu: 8 AM - 3 PM",
       "Fri: 8 AM - 3 PM",
-      "Satur: 8 AM - 3 PM"
+      "Sat: 8 AM - 3 PM"
     ],
     "location": "Chicago, IL"
   },
   {
     "id": 4,
     "name": "Dr. David Brown",
-    "photo": "https://via.placeholder.com/150",
+    "photo": "https://images.pexels.com/photos/8376293/pexels-photo-8376293.jpeg",
     "specialty": "Orthopedic Surgeon",
     "availability": [
       "Wed: 11 AM - 6 PM",
@@ -55,7 +55,7 @@
   {
     "id": 5,
     "name": "Dr. Emily Davis",
-    "photo": "https://via.placeholder.com/150",
+    "photo": "https://images.unsplash.com/photo-1550831107-1553da8c8464",
     "specialty": "Neurologist",
     "availability": [
       "Mon: 9 AM - 5 PM",
@@ -69,7 +69,7 @@
   {
     "id": 6,
     "name": "Dr. Frank Wilson",
-    "photo": "https://via.placeholder.com/150",
+    "photo": "https://images.pexels.com/photos/6129500/pexels-photo-6129500.jpeg",
     "specialty": "Endocrinologist",
     "availability": [
       "Mon: 10 AM - 4 PM",

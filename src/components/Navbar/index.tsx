@@ -3,7 +3,7 @@ import styles from "./index.module.css";
 import { useAppointmentContext } from "../../providers/AppointmentProvider";
 
 const Navbar: React.FC = () => {
-  const { appointments } = useAppointmentContext();
+  const { appointments,handleShowAppointments } = useAppointmentContext();
 
   return (
     <nav className={styles.navbar}>
@@ -12,13 +12,16 @@ const Navbar: React.FC = () => {
       </div>
       <ul className={styles.navbarLinks} aria-label="Navigation Links">
         <li>
-          <span>Appointments</span>
-          <span className={styles.badge} aria-label={`You have ${appointments.length} appointments`}>
-        <span aria-hidden="true">{appointments.length}</span>
-        <span className={styles.srOnly}>
-          {appointments.length} 
+          <button 
+        onClick={handleShowAppointments} 
+        className={styles.navbarButton} 
+        aria-label={`View your ${appointments.length} appointments`}
+          >
+        <span>Appointments</span>
+        <span className={styles.badge} aria-hidden="true">
+          {appointments.length}
         </span>
-          </span>
+          </button>
         </li>
       </ul>
     </nav>

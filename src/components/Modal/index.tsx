@@ -31,7 +31,7 @@ const Modal: React.FC<ModalProps> = ({
             </button>
           </div>
           <div className={styles.modalBody}>{children}</div>
-            <button
+          {onSubmit?  <button
               className={styles.modalButton}
               onClick={onSubmit}
               disabled={disabled}
@@ -40,7 +40,8 @@ const Modal: React.FC<ModalProps> = ({
               type="button"
             >
               Confirm
-            </button>
+            </button>:null}
+          
         </div>
       </div>
     </div>
