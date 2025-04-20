@@ -10,7 +10,9 @@ const Card: React.FC<CardProps> = ({ data, handleAddAppointment }) => {
   return (
     <div
       className={styles.card}
+      role="region"
       aria-labelledby={`card-title-${data.id}`}
+      aria-describedby={`card-description-${data.id}`}
       aria-label={`Card for ${data.name}`}
     >
       <img
@@ -21,8 +23,16 @@ const Card: React.FC<CardProps> = ({ data, handleAddAppointment }) => {
       <h2 className={styles.cardTitle} id={`card-title-${data.id}`}>
         {data.name}
       </h2>
-      <p className={styles.cardContent}>{data.specialty}</p>
-      <ul className="flex flex-wrap gap-2 items-stretch justify-center">
+      <p
+        className={styles.cardContent}
+        id={`card-description-${data.id}`}
+      >
+        {data.specialty}
+      </p>
+      <ul
+        className="flex flex-wrap gap-2 items-stretch justify-center"
+        aria-label={`Available time slots for ${data.name}`}
+      >
         {data.availability.map((timeSlot, index) => (
           <li key={index} className={styles.tags}>
             {timeSlot}

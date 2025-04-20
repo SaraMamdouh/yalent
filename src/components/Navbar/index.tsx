@@ -14,7 +14,10 @@ const Navbar: React.FC = () => {
         <li>
           <span>Appointments</span>
           <span className={styles.badge} aria-label={`You have ${appointments.length} appointments`}>
-        {appointments.length}
+        <span aria-hidden="true">{appointments.length}</span>
+        <span className={styles.srOnly}>
+          {appointments.length} 
+        </span>
           </span>
         </li>
       </ul>

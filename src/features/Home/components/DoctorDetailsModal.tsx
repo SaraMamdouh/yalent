@@ -37,38 +37,39 @@ const DoctorDetailsModal: React.FC<DoctorDetailsModalProps> = ({
       disabled={!selectedTimeSlot}
     >
       <div className="flex flex-col items-center justify-center">
-      <img
-        src={data?.photo}
-        alt={data?.name || "Doctor's photo"}
-        className="w-32 h-32 rounded-full"
-      />
-      <p className="mb-5 font-bold text-xl" id="time-slots-heading">
-        Available time slots
-      </p>
-      <div
-        className="flex flex-wrap gap-2 items-stretch justify-center"
-        role="group"
-        aria-labelledby="time-slots-heading"
-      >
-        {data?.availability.map((timeSlot) => (
+        <img
+          src={data?.photo}
+          alt={data?.name || "Doctor's photo"}
+          className="w-32 h-32 rounded-full"
+        />
+        <p className="mb-5 font-bold text-xl" id="time-slots-heading">
+          Available time slots
+        </p>
+        <div
+          className="flex flex-wrap gap-2 items-stretch justify-center"
+          role="group"
+          aria-labelledby="time-slots-heading"
+        >
+          {data?.availability.map((timeSlot) => (
         <button
           key={timeSlot}
           className={styles.tags}
           onClick={() =>
-          setSelectedTimeSlot(
-            timeSlot === selectedTimeSlot ? null : timeSlot
-          )
+            setSelectedTimeSlot(
+          timeSlot === selectedTimeSlot ? null : timeSlot
+            )
           }
           style={{
-          backgroundColor:
-            selectedTimeSlot === timeSlot ? "#4CAF50" : "#f1f1f1",
+            backgroundColor:
+          selectedTimeSlot === timeSlot ? "#4CAF50" : "#f1f1f1",
           }}
           aria-pressed={selectedTimeSlot === timeSlot}
+          aria-label={`Time slot ${timeSlot}`}
         >
           {timeSlot}
         </button>
-        ))}
-      </div>
+          ))}
+        </div>
       </div>
     </Modal>
   );
