@@ -6,7 +6,7 @@ const Navbar: React.FC = () => {
   const { appointments,handleShowAppointments } = useAppointmentContext();
 
   return (
-    <nav className={styles.navbar}>
+    <nav className={styles.navbar} aria-label="Navigation Links">
       <div className={styles.navbarLogo}>
         <a href="/">Logo</a>
       </div>
@@ -16,6 +16,7 @@ const Navbar: React.FC = () => {
         onClick={handleShowAppointments} 
         className={styles.navbarButton} 
         aria-label={`View your ${appointments.length} appointments`}
+        type="button"
           >
         <span>Appointments</span>
         <span className={styles.badge} aria-hidden="true">

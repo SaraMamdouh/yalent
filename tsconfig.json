@@ -6,6 +6,8 @@
     "paths": {
       "src/*": ["src/*"]
     },
+    "types": ["vitest/globals", "@testing-library/jest-dom","node"], // Specify type declaration files to be included
+    
     "jsx": "react-jsx", // Specify JSX code generation for React 17+
     "target": "ES6", // Specify ECMAScript target version
     "resolveJsonModule": true, // Allow importing .json files as modules

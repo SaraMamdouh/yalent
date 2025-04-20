@@ -21,27 +21,44 @@ const Modal: React.FC<ModalProps> = ({
   if (!isOpen) return null;
 
   return (
-    <div className={styles.modalOverlay} onClick={onClose}>
-      <div className={styles.modal} onClick={(e) => e.stopPropagation()}>
+    <div className={styles.modalOverlay} onClick={onClose} aria-label='modal-overlay'>
+      <div
+        className={styles.modal}
+        onClick={(e) => e.stopPropagation()}
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="modal-title" 
+        aria-label="modal">
+
         <div className={styles.modalContent}>
-          <div className={styles.modalHeader}>
-            {title && <h2>{title}</h2>}
-            <button className={styles.modalClose} onClick={onClose}>
-              &times;
-            </button>
-          </div>
-          <div className={styles.modalBody}>{children}</div>
-          {onSubmit?  <button
-              className={styles.modalButton}
-              onClick={onSubmit}
-              disabled={disabled}
-              aria-disabled={disabled}
-              aria-label="Confirm action"
+            <div className={styles.modalHeader} aria-label="modal-header">
+            {title && (
+              <h2 id="modal-title" aria-label="modal-title" >
+              {title}
+              </h2>
+            )}
+            <button
+              className={styles.modalClose}
+              onClick={onClose}
+              aria-label="Close modal"
               type="button"
             >
-              Confirm
-            </button>:null}
-          
+              <span aria-hidden="true">&times;</span>
+            </button>
+            </div>
+          <div className={styles.modalBody}>{children}</div>
+          {onSubmit ? (
+        <button
+          className={styles.modalButton}
+          onClick={onSubmit}
+          disabled={disabled}
+          aria-disabled={disabled}
+          aria-label="Confirm action"
+          type="button"
+        >
+          Confirm
+        </button>
+          ) : null}
         </div>
       </div>
     </div>

@@ -36,7 +36,11 @@ const DoctorDetailsModal: React.FC<DoctorDetailsModalProps> = ({
       onSubmit={handleConfirmApponitment}
       disabled={!selectedTimeSlot}
     >
-      <div className="flex flex-col items-center justify-center">
+      <div
+        className="flex flex-col items-center justify-center"
+        aria-label="Doctor details and available time slots"
+        role="region"
+      >
         <img
           src={data?.photo}
           alt={data?.name || "Doctor's photo"}
@@ -64,7 +68,7 @@ const DoctorDetailsModal: React.FC<DoctorDetailsModalProps> = ({
           selectedTimeSlot === timeSlot ? "#4CAF50" : "#f1f1f1",
           }}
           aria-pressed={selectedTimeSlot === timeSlot}
-          aria-label={`Time slot ${timeSlot}`}
+          aria-label={`Select ${timeSlot}`}
         >
           {timeSlot}
         </button>
