@@ -8,18 +8,31 @@ type CardProps = {
 
 const Card: React.FC<CardProps> = ({ data, handleAddAppointment }) => {
   return (
-    <div className={styles.card}>
-      <img src={data.photo} alt={data.name} className={styles.cardImage} />
-      <h2 className={styles.cardTitle}>{data.name}</h2>
+    <div
+      className={styles.card}
+      aria-labelledby={`card-title-${data.id}`}
+      aria-label={`Card for ${data.name}`}
+    >
+      <img
+        src={data.photo}
+        alt={`Photo of ${data.name}`}
+        className={styles.cardImage}
+      />
+      <h2 className={styles.cardTitle} id={`card-title-${data.id}`}>
+        {data.name}
+      </h2>
       <p className={styles.cardContent}>{data.specialty}</p>
-      <div className="flex flex-wrap gap-2 items-stretch justify-center">
-        {data.availability.map((timeSlot) => (
-          <p className={styles.tags}>{timeSlot}</p>
+      <ul className="flex flex-wrap gap-2 items-stretch justify-center">
+        {data.availability.map((timeSlot, index) => (
+          <li key={index} className={styles.tags}>
+            {timeSlot}
+          </li>
         ))}
-      </div>
+      </ul>
       <button
         onClick={() => handleAddAppointment(data)}
         className={styles.bookButton}
+        aria-label={`Book an appointment with ${data.name}`}
       >
         Book Appointment
       </button>

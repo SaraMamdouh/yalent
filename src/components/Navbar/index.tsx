@@ -10,10 +10,12 @@ const Navbar: React.FC = () => {
       <div className={styles.navbarLogo}>
         <a href="/">Logo</a>
       </div>
-      <ul className={styles.navbarLinks}>
+      <ul className={styles.navbarLinks} aria-label="Navigation Links">
         <li>
-          appointments
-          <span className={styles.badge}>{appointments.length}</span>
+          <span>Appointments</span>
+          <span className={styles.badge} aria-label={`You have ${appointments.length} appointments`}>
+        {appointments.length}
+          </span>
         </li>
       </ul>
     </nav>

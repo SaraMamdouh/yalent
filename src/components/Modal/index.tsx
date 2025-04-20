@@ -31,13 +31,15 @@ const Modal: React.FC<ModalProps> = ({
             </button>
           </div>
           <div className={styles.modalBody}>{children}</div>
-          <button
+            <button
             className={styles.modalButton}
             onClick={onSubmit}
             disabled={disabled}
-          >
+            aria-disabled={disabled}
+            aria-label="Confirm action"
+            >
             Confirm
-          </button>
+            </button>
         </div>
       </div>
     </div>
