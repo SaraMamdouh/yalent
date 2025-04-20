@@ -23,7 +23,7 @@ const {appointments} = useAppointmentContext();
     <table className="table-auto md:table-fixed w-full text-left border-collapse border border-gray-300">
        <thead className="bg-gray-200 text-gray-700 uppercase text-sm font-bold text-center">    
           <tr>
-             <th className="border border-gray-300 w-1/3">Doctor</th>
+             <th className="border border-gray-300 p-5">Doctor</th>
              <th className="border border-gray-300 p-5">Time Slot</th>
              <th className="border border-gray-300 p-5">Specialty</th>
              <th className="border border-gray-300 p-5">Location</th>  
@@ -33,10 +33,7 @@ const {appointments} = useAppointmentContext();
           {
              appointments.map((appointment) => (
                 <tr key={appointment.id} >
-                    <td className="flex flex-col md:flex-row items-center gap-2 p-5">
-                       <img src={appointment.photo} alt={appointment.name} className="w-16 h-16 md:w-20 md:h-auto rounded-full" />
-                       <span className="font-bold text-center md:text-left">{appointment.name}</span>
-                    </td>
+                    <td className="border border-gray-300 p-5">{appointment.name}</td>
                     <td className="border border-gray-300 p-5">{appointment.timeSlot}</td>
                     <td className="border border-gray-300 p-5">{appointment.specialty}</td>
                     <td className="border border-gray-300 p-5">{appointment.location}</td>
