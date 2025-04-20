@@ -14,12 +14,12 @@ const Home = () => {
         onHide={() => setActiveModal(null)}
       />
   
-      <div className="flex flex-wrap  justify-center my-40 items-stretch">
+      <div className="flex flex-wrap justify-center my-40 items-stretch gap-4 px-4 sm:px-8">
         {data.map((item) => (
           <Card
-            key={item.id}
-            data={item}
-            handleAddAppointment={(data: Appointment) => setActiveModal(data)}
+        key={item.id}
+        data={item}
+        handleAddAppointment={(data: Appointment) => setActiveModal(data)}
           />
         ))}
       </div>
